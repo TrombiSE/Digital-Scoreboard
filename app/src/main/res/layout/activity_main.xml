@@ -4,48 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-    android:screenOrientation="landscape">
+    android:screenOrientation="landscape"
+    tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="118dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="24dp"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="190dp"
-        android:layout_height="149dp"
+        android:id="@+id/buttonHome"
+        android:layout_width="176dp"
+        android:layout_height="246dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Button"
+        android:background="#E62196F3"
+        android:text="0"
+        android:textSize="72sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="190dp"
-        android:layout_height="149dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/buttonPenaltyHome"
+        android:layout_width="109dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="16dp"
+        android:background="#FFEB3B"
+        android:text="0"
+        android:textSize="72sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonHome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546" />
+
+    <Button
+        android:id="@+id/buttonPenaltyGuest"
+        android:layout_width="110dp"
+        android:layout_height="157dp"
         android:layout_marginEnd="16dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="#FFEB3B"
+        android:text="0"
+        android:textSize="72sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGuest"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="118dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="76dp"
-        android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/buttonGuest"
+        android:layout_width="162dp"
+        android:layout_height="244dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FF1F37"
+        android:text="0"
+        android:textSize="72sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.328" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="#37C1FF"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
